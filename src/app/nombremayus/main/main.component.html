@@ -1,0 +1,25 @@
+<p>main works! cambiar nombre a mayuscula</p>
+<h1>Bienvenido a la seccion de Minicula a Mayuscula <span class="badge bg-secondary"></span></h1>
+
+<input type="text" style="padding: 10px;" name="name">
+<button (click)="this.imprimirEnConsola()" style="width: 100%;">Click Evento</button>
+
+<div class="alert alert-primary" role="alert" *ngIf="mostrarAlert">
+    El nombre en mayuscula es {{this.name|uppercase}} [(ngModel)]="this.name"
+
+</div>
+
+<div class="alert alert-info" role="alert">
+    <span>
+        El nombre en minuscula {{this.name}}
+    </span>
+    <span style="font-weight: bold">
+        con pipe
+    </span>
+    <span class="badge bg-sencodary" style="color:rgb(218, 32, 32)">
+        uppercase
+    </span>
+    <span>
+        ES: {{this.name|uppercase}}
+    </span>
+</div>

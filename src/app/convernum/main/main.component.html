@@ -1,0 +1,25 @@
+<h1>Bienvenido a la seccion de convertir Números a Porcentajes <span class="badge bg-secondary"></span></h1>
+
+<input type="text" style="padding: 10px;" name="name">
+<button (click)="this.imprimirEnConsola()" style="width: 100%;">Click Evento</button>
+
+<div class="alert alert-primary" role="alert" *ngIf="mostrarAlert">
+    El numero {{this.name}} [(ngModel)]="this.name"
+
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    <span>
+        Dato tipo decimal {{this.porcentaje}}
+    </span>
+    <span style="font-weight: bold">
+        con pipe
+    </span>
+    <span class="badge bg-sencodary" style="color:rgb(218, 32, 32)">
+        percent
+    </span>
+    <span>
+        : {{this.porcentaje|percent}}
+    </span>
+</div>
